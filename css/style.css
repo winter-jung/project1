@@ -25,11 +25,12 @@ header {
 }
 
 
-.menu-icon {
-    width: 36px;
-    margin-right: 16px;
-}
 
+.menu-icon {
+    width: 150px;
+    left: 0;
+}
+/*  끝*/
 .logo {
     height: 40px;
 }
