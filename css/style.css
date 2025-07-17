@@ -343,10 +343,10 @@ header {
     cursor: pointer;
 }
 
-.store-img {
+/* .store-img {
     width: 120px;
     margin-top: 10px;
-}
+} */
 
 footer {
     background: #fff;
@@ -392,4 +392,52 @@ footer {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
+}
+
+/* 내가해본거 */
+
+.store-img1{
+    width: 200px;
+margin-left: -50;
+}
+.store-img2{
+    width: 200px;
+    margin-right: -50;
+   
+}
+
+/* //////// */
+
+.main-visual {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 65%;
+}
+
+.main-visual-content {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 8.0208%;
+
+    /* clip-path: polygon(0 0, 100% 0, 93.2291% 28.5%, 29.2187% 99.2401%, 0 131.5%); */
+}
+
+.main-visual-content .title {
+
+    width: 90%;
+    transition: transform 1s;
+    animation: title 2s 1 forwards;
+}
+
+@keyframes title {
+    from {
+        transform: translate(-100%, 0px) scale(0);
+    }
+
+    to {
+        transform: translate(-10%, 0px) scale(1);
+    }
 }
