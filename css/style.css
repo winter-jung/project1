@@ -348,6 +348,8 @@ header {
 
 .main-menu-section {
     background: #fffbe6;
+    background-image: url(../image/synd_bg.jpg);
+    
     text-align: center;
     padding: 60px 0 40px 0;
 }
@@ -512,14 +514,14 @@ header {
 footer {
     background: #fff;
     border-top: 2px solid #ffe000;
-    text-align: center;
+    /* text-align: center; */
     padding: 30px 0 20px 0;
     color: #ff2d2d;
 }
 
 .footer-inner {
     max-width: 900px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .footer-logo {
