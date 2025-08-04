@@ -68,7 +68,7 @@ const marquee1 = () => {
     box.className = 'box';
     const img = document.createElement('img');
     // 이미지주소
-    img.src = '../image/sauce_flow02.jpg';
+    img.src = './image/sauce_flow02.jpg';
     img.alt = '';
     
    
