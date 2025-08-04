@@ -8,12 +8,12 @@ const marquee = () => {
     return;
   }
 
-  // 이미지 너비와 뷰포트 너비 계산
+  
   const imageWidth = 360;
   const viewportWidth = window.innerWidth;
   const imageCount = Math.ceil(viewportWidth / imageWidth) + 2; // 여유분 +2개
 
-  // 이미지들을 동적으로 생성
+ 
   for (let i = 0; i < imageCount; i++) {
     const box = document.createElement('div');
     box.className = 'box';
@@ -24,18 +24,18 @@ const marquee = () => {
     marqueeContent.appendChild(box);
   }
 
-  // 복제본 생성
+  
   const marqueeContentClone = marqueeContent.cloneNode(true);
   marquee.appendChild(marqueeContentClone);
 
-  // 전체 마퀴 너비 계산
+ 
   const totalWidth = imageWidth * imageCount;
 
-  // 초기 위치 설정
+  
   gsap.set(marqueeContent, { x: 0 });
   gsap.set(marqueeContentClone, { x: totalWidth });
 
-  // 두 요소를 동시에 왼쪽으로 이동
+  
   const tl = gsap.timeline({ repeat: -1 });
 
   tl.to([marqueeContent, marqueeContentClone], {
@@ -57,17 +57,16 @@ const marquee1 = () => {
     return;
   }
 
-  // 이미지 너비와 뷰포트 너비 계산
+ 
   const imageWidth = 296;
   const viewportWidth = window.innerWidth;
   const imageCount = Math.ceil(viewportWidth / imageWidth) + 2; // 여유분 +2개
 
-  // 이미지들을 동적으로 생성
   for (let i = 0; i < imageCount; i++) {
     const box = document.createElement('div');
     box.className = 'box';
     const img = document.createElement('img');
-    // 이미지주소
+    
     img.src = './image/sauce_flow02.jpg';
     img.alt = '';
     
@@ -77,18 +76,18 @@ const marquee1 = () => {
     marqueeContent.appendChild(box);
   }
 
-  // 복제본 생성
+  
   const marqueeContentClone = marqueeContent.cloneNode(true);
   marquee.appendChild(marqueeContentClone);
 
-  // 전체 마퀴 너비 계산
+  
   const totalWidth = imageWidth * imageCount;
 
-  // 초기 위치 설정
+  
   gsap.set(marqueeContent, { x: 0 });
   gsap.set(marqueeContentClone, { x: totalWidth });
 
-  // 두 요소를 동시에 왼쪽으로 이동
+  
   const tl = gsap.timeline({ repeat: -1 });
 
   tl.to([marqueeContent, marqueeContentClone], {
